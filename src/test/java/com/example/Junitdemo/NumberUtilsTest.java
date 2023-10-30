@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class NumberUtilsTest {
 	
+	private NumberUtils numberUtils = new NumberUtils();
 	@Test
 	public void isEvenTest1() {
 		assertEquals(true, NumberUtils.isEven(6));
@@ -29,6 +30,11 @@ public class NumberUtilsTest {
 	@Test
 	public void calculateFactorialTest3() {
 		assertEquals(3628800, NumberUtils.calculateFactorial(10));
+	}
+	
+	@Test
+	public void calculateFactorialTest4() {
+		assertEquals(1, NumberUtils.calculateFactorial(-5));
 	}
 	
 	@Test

@@ -11,11 +11,10 @@ public class NumberUtils {
 	}
 
 	public static int calculateFactorial(int n) {
-		if (n == 1 || n == 0) {
+		if (n <= 1)
 			return 1;
-		} else {
-			return n * calculateFactorial(n - 1);
-		}
+
+		return n * calculateFactorial(n - 1);
 	}
 
 }
